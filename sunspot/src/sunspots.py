@@ -1,11 +1,10 @@
 import csv
 import matplotlib.pyplot as plt
 
-x = 1
 years = []
 spots = []
 
-with open("ISSN_M_tot.csv") as file:
+with open("../data/ISSN_M_tot.csv") as file:
     reader = csv.DictReader(file)
     for row in reader:
         years.append(float(row["year"])) 
